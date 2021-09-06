@@ -156,7 +156,6 @@ header {
   height: auto;
   background-image: url('./public/images/program-x.png');
   background-size: cover;
-  margin-top: -5.1%;
   padding: 20px 10px;
 }
 
@@ -184,3 +183,47 @@ header {
   width: 60%;
   padding-left: 5%;
 }
+
+/* GUEST ARTIST SECTION */
+.guest-artists-section {
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+.artist-card {
+  background-color: blanchedalmond;
+}
+
+.artist-image-container {
+  width: 40%;
+  height: 50%;
+  background-color: #ec5242;
+}
+
+.artist-image-container > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.artist-content-container {
+  width: 60%;
+  height: 20%;
+  background-color: aqua;
+}
+
+.artist-content-container .artist-name {
+  font-size: 17px;
+  margin-bottom: -2%;
+}
+
+.artist-content-container .artist-record-label {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.line-sm {
+  width: 10% !important;
+}
+
+/* artist-summary */
