@@ -22,6 +22,10 @@ body {
   flex-direction: row;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -295,6 +299,10 @@ header {
   background-color: gray !important;
 }
 
+.line-xs {
+  width: 10% !important;
+}
+
 .see-more-button,
 .collapse-button {
   border: 1px solid #3c3f4659;
@@ -345,21 +353,20 @@ header {
   padding: 10px 0;
 }
 
-.past-event-image-1 {
-  background-image: url('/public/images/past-events/event1.jpg');
+.past-event {
+  height: 25vh !important;
+  margin: 0 25px 20px 25px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 25vh !important;
-  margin-bottom: 20px;
+}
+
+.past-event-image-1 {
+  background-image: url('/public/images/past-events/event1.jpg');
 }
 
 .past-event-image-2 {
   background-image: url('/public/images/past-events/event2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25vh !important;
 }
 
 .past-event-content {
@@ -370,4 +377,18 @@ header {
 
 .past-event-content > h4 {
   margin-bottom: -3px;
+}
+
+/* Partners Section */
+.partners-section {
+  height: 30vh;
+}
+
+.partner-image-container > ul > li {
+  margin: 0 10px;
+}
+
+.partners-image {
+  width: 90px;
+  margin: 0 10px 0 -15px;
 }
