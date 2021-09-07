@@ -95,7 +95,7 @@ body {
 }
 
 .font-md {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .font-lg {
@@ -185,8 +185,12 @@ header {
 }
 
 .venue-text {
-  font-size: 17px;
+  font-size: 15px;
   margin: 8% 0 0 13%;
+}
+
+.dateTime-text {
+  font-size: 18px;
 }
 
 /* MODAL SECTION */

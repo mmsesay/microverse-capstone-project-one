@@ -8,7 +8,7 @@ const artistsArray = [
     artistImage: {
       url: './public/images/artists/maej.jpg',
       alt: 'boss maej\'s photo'
-    }
+    },
   },
   {
     artistName: 'DReal',
@@ -17,7 +17,7 @@ const artistsArray = [
     artistImage: {
       url: './public/images/artists/dreal.jpg',
       alt: 'DReal\'s photo'
-    }
+    },
   },
   {
     artistName: 'Burna Boy',
@@ -26,7 +26,7 @@ const artistsArray = [
     artistImage: {
       url: './public/images/artists/burna-boy.jpeg',
       alt: 'Burna boy photo'
-    }
+    },
   },
   {
     artistName: 'Oxlade',
@@ -35,7 +35,7 @@ const artistsArray = [
     artistImage: {
       url: './public/images/artists/oxlade.jpg',
       alt: 'Oxlade\'s photo'
-    }
+    },
   },
   {
     artistName: 'Stormzy',
@@ -44,7 +44,7 @@ const artistsArray = [
     artistImage: {
       url: './public/images/artists/stormzy.jpg',
       alt: 'Stormzy\'s photo'
-    }
+    },
   },
   {
     artistName: 'Dave Santan',
@@ -53,8 +53,8 @@ const artistsArray = [
     artistImage: {
       url: './public/images/artists/dave.jpg',
       alt: 'Dave\'s photo'
-    }
-  }
+    },
+  },
 ];
 
 // accessing the dom elements
@@ -74,13 +74,13 @@ let objectsToShow = 2;
 let startIndex = 0;
 
 const hideElement = (args) => {
-  args.forEach(element => {
+  args.forEach((element) => {
     element.style.display = 'none';
   });
 };
 
 const showElement = (args, direction) => {
-  args.forEach(element => {
+  args.forEach((element) => {
     if (direction === 'block') {
       element.style.display = 'block';
     } else {
@@ -92,8 +92,7 @@ const showElement = (args, direction) => {
 // this function shows the artis card
 const showArtists = () => {
   // iterate through the artist array and pass dynamic data to card element
-  for (let i=startIndex; i < artistsArray.length; i++) {
-    
+  for (let i = startIndex; i < artistsArray.length; i += 1) {
     // check if the current index is lesser than the number of items to show 
     if (i < objectsToShow) {
       artistCard += `
@@ -136,7 +135,6 @@ seeMoreButton.addEventListener('click', () => {
 });
 
 collapseButton.addEventListener('click', () => {
-
   showArtists(); // show the artists
   objectsToShow = 2; // reset to show 2 items only
 });
@@ -144,7 +142,7 @@ collapseButton.addEventListener('click', () => {
 openMenuButton.addEventListener('click', () => {
   showElement([modalSection, closeMenuButton], 'block');
   headlineSection.style.filter = 'blur(3px)';
-  aboutHeadlineSection.style.filter = 'blur(3px);'
+  aboutHeadlineSection.style.filter = 'blur(3px)';
   body.style.overflow = 'hidden';
 });
 
