@@ -58,9 +58,14 @@ const artistsArray = [
 ];
 
 // accessing the dom elements
+const body = document.querySelector('body');
 const GuestArtistContainer = document.querySelector('.guest-artists-cards-container');
 const seeMoreButton = document.querySelector('.see-more-button');
 const collapseButton = document.querySelector('.collapse-button');
+const headlineSection = document.querySelector('.headline-section');
+const modalSection = document.querySelector('.modal-section');
+const openMenuButton = document.getElementById('openMenuIcon');
+const closeMenuButton = document.getElementById('closeMenuIcon');
 
 // will hold the card element for each artist that will be rendered into the artist container
 let artistCard = '';
@@ -75,7 +80,7 @@ const hideElement = (args) => {
 
 const showElement = (args) => {
   args.forEach(element => {
-    element.style.display = 'flex';
+    element.style.display = 'block';
   });
 };
 
@@ -127,9 +132,20 @@ seeMoreButton.addEventListener('click', () => {
   }
 });
 
-
 collapseButton.addEventListener('click', () => {
 
   showArtists(); // show the artists
   objectsToShow = 2; // reset to show 2 items only
+});
+
+openMenuButton.addEventListener('click', () => {
+  showElement([modalSection, closeMenuButton]);
+  headlineSection.style.filter = 'blur(3px)';
+  body.style.overflow = 'hidden';
+});
+
+closeMenuButton.addEventListener('click', () => {
+  hideElement([modalSection, closeMenuButton]);
+  headlineSection.style.filter = 'blur(0px)';
+  body.style.overflow = 'scroll';
 });
