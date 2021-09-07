@@ -60,6 +60,10 @@ body {
   color: #d3d3d3;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .hide-on-sm,
 .hide-on-lg {
   display: none;
@@ -299,4 +303,29 @@ header {
 
 .collapse-button {
   display: none;
+}
+
+/* ABOUT SECTION */
+.about-headline-section {
+  background-image: url('/public/images/mobile-about.svg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  top: 0%;
+}
+
+.about-headline-content-container {
+  margin: 35% 0 0 0;
+  padding: 10px 0;
+}
+
+.about-headline-content-card {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 24px;
 }
