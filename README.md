@@ -19,7 +19,7 @@ About second view                                 |  About footer view
 - HTML & CSS & JAVASCRIPT
 
 ## Link to project online
-- [OnlineVersion](https://mmsesay.github.io/my-microverse-portfolio/)
+- [OnlineVersion](https://mmsesay.github.io/microverse-capstone-project-one/)
 
 ## Authors
 
