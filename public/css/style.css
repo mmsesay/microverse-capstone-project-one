@@ -117,6 +117,18 @@ body {
   font-size: 18px;
 }
 
+.m-10 {
+  margin: 10px 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-gray {
+  color: gray;
+}
+
 /* HEADER SECTION */
 header {
   width: 100%;
@@ -136,6 +148,7 @@ header {
 /* Headline section */
 .headline-section {
   background-image: url('/public/images/mobile-landing.svg');
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   top: 0%;
@@ -190,26 +203,33 @@ header {
   padding: 20px 10px;
 }
 
-.artist-card {
-  background-color: blanchedalmond;
+.guest-artists-cards-container {
+  margin-top: 10%;
 }
 
 .artist-image-container {
-  width: 40%;
+  width: 30%;
   height: 50%;
-  background-color: #ec5242;
 }
 
-.artist-image-container > img {
-  width: 150px;
-  height: 150px;
+.artist-image-container > .chess-image {
+  width: 50px;
+  height: 50px;
+  position: relative;
   object-fit: contain;
 }
 
+.artist-image-container > .artist-image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  position: absolute;
+  margin: -1% 0 0 -10.5%;
+}
+
 .artist-content-container {
-  width: 60%;
-  height: 20%;
-  background-color: aqua;
+  width: 70%;
+  margin-left: 30px;
 }
 
 .artist-content-container .artist-name {
@@ -222,8 +242,26 @@ header {
   font-size: 12px;
 }
 
-.line-sm {
-  width: 10% !important;
+.artist-content-container .artist-summary {
+  font-size: 12px;
 }
 
-/* artist-summary */
+.line-sm {
+  width: 10% !important;
+  background-color: gray !important;
+}
+
+.see-more-button,
+.collapse-button {
+  border: 1px solid #3c3f4659;
+  height: 40px;
+  width: 100%;
+}
+
+.chevron {
+  margin: 0 15px;
+}
+
+.collapse-button {
+  display: none;
+}
