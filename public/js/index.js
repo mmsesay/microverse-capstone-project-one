@@ -7,7 +7,7 @@ const artistsArray = [
     artistSummary: 'The artist\'s real name is Muhammad Sesay from Sierra Leone.',
     artistImage: {
       url: './public/images/artists/maej.jpg',
-      alt: 'boss maej\'s photo'
+      alt: 'boss maej\'s photo',
     },
   },
   {
@@ -16,7 +16,7 @@ const artistsArray = [
     artistSummary: 'The artist\'s real name is Houdi Kawulay from Sierra Leone.',
     artistImage: {
       url: './public/images/artists/dreal.jpg',
-      alt: 'DReal\'s photo'
+      alt: 'DReal\'s photo',
     },
   },
   {
@@ -25,7 +25,7 @@ const artistsArray = [
     artistSummary: 'The artist\'s real name is Damini Ebunoluwa Ogulu from Sierra Leone',
     artistImage: {
       url: './public/images/artists/burna-boy.jpeg',
-      alt: 'Burna boy photo'
+      alt: 'Burna boy photo',
     },
   },
   {
@@ -34,7 +34,7 @@ const artistsArray = [
     artistSummary: 'The artist\'s real name is Ikuforiji Olaitan Abdulrahman from Nigeria.',
     artistImage: {
       url: './public/images/artists/oxlade.jpg',
-      alt: 'Oxlade\'s photo'
+      alt: 'Oxlade\'s photo',
     },
   },
   {
@@ -43,7 +43,7 @@ const artistsArray = [
     artistSummary: 'The artist\'s real name is Michael Ebenezer Kwadjo Omari Jr. from UK',
     artistImage: {
       url: './public/images/artists/stormzy.jpg',
-      alt: 'Stormzy\'s photo'
+      alt: 'Stormzy\'s photo',
     },
   },
   {
@@ -52,7 +52,7 @@ const artistsArray = [
     artistSummary: 'The artist\'s real name is David Orobosa Omoregie',
     artistImage: {
       url: './public/images/artists/dave.jpg',
-      alt: 'Dave\'s photo'
+      alt: 'Dave\'s photo',
     },
   },
 ];
@@ -93,7 +93,7 @@ const showElement = (args, direction) => {
 const showArtists = () => {
   // iterate through the artist array and pass dynamic data to card element
   for (let i = startIndex; i < artistsArray.length; i += 1) {
-    // check if the current index is lesser than the number of items to show 
+    // check if the current index is lesser than the number of items to show
     if (i < objectsToShow) {
       artistCard += `
         <div class="artist-card flex items-center m-10">
