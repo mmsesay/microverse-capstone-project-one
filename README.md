@@ -3,6 +3,7 @@
 > This project is my capstone project on HTML + CSS + JAVASCRIPT. My chosen topic is Music Festival.
 
 ![screenshot]
+:------------------------------------------------:|:-----------------------------------------------:
 Homepage view                                     |  Main program view
 :------------------------------------------------:|:-----------------------------------------------:
 ![](./public/images/screenshots/m1.png)           |  ![](./public/images/screenshots/m2.png)
@@ -13,7 +14,7 @@ Guests View                                       |  About view
 
 About second view                                 |  About footer view
 :------------------------------------------------:|:-----------------------------------------------:
-![](./public/images/screenshots/m5.png)           |  ![](./public/images/screenshots/m6.png)  |
+![](./public/images/screenshots/m5.png)           |  ![](./public/images/screenshots/m6.png)
 
 ## Built With
 
