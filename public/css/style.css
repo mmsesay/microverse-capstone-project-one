@@ -172,7 +172,7 @@ header {
 
 /* Headline section */
 .headline-section {
-  background-image: url('/public/images/svgs/mobile-landing.svg');
+  background-image: url('../images/svgs/mobile-landing.svg');
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -215,7 +215,7 @@ header {
 /* MAIN PROGRAM SECTION */
 .main-program-section {
   height: auto;
-  background-image: url('/public/images/program-x.png');
+  background-image: url('../images/program-x.png');
   padding: 20px 10px;
 }
 
@@ -319,7 +319,7 @@ header {
 
 /* ABOUT SECTION */
 .about-headline-section {
-  background-image: url('/public/images/svgs/mobile-about.svg');
+  background-image: url('../images/svgs/mobile-about.svg');
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
