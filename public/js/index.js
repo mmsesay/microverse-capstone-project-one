@@ -63,6 +63,7 @@ const GuestArtistContainer = document.querySelector('.guest-artists-cards-contai
 const seeMoreButton = document.querySelector('.see-more-button');
 const collapseButton = document.querySelector('.collapse-button');
 const headlineSection = document.querySelector('.headline-section');
+const aboutHeadlineSection = document.querySelector('.about-headline-section');
 const modalSection = document.querySelector('.modal-section');
 const openMenuButton = document.getElementById('openMenuIcon');
 const closeMenuButton = document.getElementById('closeMenuIcon');
@@ -78,9 +79,13 @@ const hideElement = (args) => {
   });
 };
 
-const showElement = (args) => {
+const showElement = (args, direction) => {
   args.forEach(element => {
-    element.style.display = 'block';
+    if (direction === 'block') {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'flex';
+    }
   });
 };
 
@@ -125,9 +130,7 @@ seeMoreButton.addEventListener('click', () => {
 
   if (objectsToShow >= artistsArray.length) {
     hideElement([seeMoreButton]);
-    showElement([collapseButton]);
   } else {
-    hideElement([collapseButton]);
     showElement([seeMoreButton]);
   }
 });
@@ -139,8 +142,9 @@ collapseButton.addEventListener('click', () => {
 });
 
 openMenuButton.addEventListener('click', () => {
-  showElement([modalSection, closeMenuButton]);
+  showElement([modalSection, closeMenuButton], 'block');
   headlineSection.style.filter = 'blur(3px)';
+  aboutHeadlineSection.style.filter = 'blur(3px);'
   body.style.overflow = 'hidden';
 });
 
