@@ -98,6 +98,11 @@ body {
   font-size: 20px;
 }
 
+.font-sm {
+  font-size: 12px;
+  line-height: 24px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -163,7 +168,7 @@ header {
 
 /* Headline section */
 .headline-section {
-  background-image: url('/public/images/mobile-landing.svg');
+  background-image: url('/public/images/svgs/mobile-landing.svg');
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -307,7 +312,7 @@ header {
 
 /* ABOUT SECTION */
 .about-headline-section {
-  background-image: url('/public/images/mobile-about.svg');
+  background-image: url('/public/images/svgs/mobile-about.svg');
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -328,4 +333,41 @@ header {
 .description {
   font-size: 15px;
   line-height: 24px;
+}
+
+.about-site-logo {
+  margin: 10% 0;
+}
+
+.past-event-images-container {
+  width: 100%;
+  height: 80%;
+  padding: 10px 0;
+}
+
+.past-event-image-1 {
+  background-image: url('/public/images/past-events/event1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh !important;
+  margin-bottom: 20px;
+}
+
+.past-event-image-2 {
+  background-image: url('/public/images/past-events/event2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh !important;
+}
+
+.past-event-content {
+  background-color: rgba(172, 40, 40, 0.719);
+  height: 100%;
+  width: 100%;
+}
+
+.past-event-content > h4 {
+  margin-bottom: -3px;
 }
