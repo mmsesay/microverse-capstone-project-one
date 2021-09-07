@@ -2,9 +2,7 @@
 
 > This project is my capstone project on HTML + CSS + JAVASCRIPT. My chosen topic is Music Festival.
 
-![screenshot]
-:------------------------------------------------:|:-----------------------------------------------:
-Homepage view                                     |  Main program view
+Homepage view                                     |  Main program view                             |
 :------------------------------------------------:|:-----------------------------------------------:
 ![](./public/images/screenshots/m1.png)           |  ![](./public/images/screenshots/m2.png)
 
