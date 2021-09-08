@@ -43,7 +43,6 @@ body {
 }
 
 .secondary-bg-color {
-  color: #ec5242;
   background-color: #ec5242;
 }
 
@@ -64,17 +63,23 @@ body {
   color: #d3d3d3;
 }
 
+.bg-gray-color {
+  background-color: #3e3e3e;
+}
+
+.gray-text-color {
+  color: #3e3e3e;
+}
+
 .bg-white {
   background-color: #fff;
 }
 
-.hide-on-sm,
-.hide-on-lg {
+.hide-on-sm {
   display: none;
 }
 
-.show-on-sm,
-.show-on-lg {
+.show-on-sm {
   display: flex;
 }
 
@@ -185,7 +190,7 @@ header {
 }
 
 .headline-content-container {
-  margin-top: 75%;
+  margin-top: 60%;
   padding: 0 30px;
 }
 
@@ -419,4 +424,76 @@ footer .footer-site-logo {
 footer .copyright-text {
   font-size: 13px;
   line-height: 20px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 768px) {
+  .hide-on-lg {
+    display: none;
+  }
+
+  .show-on-sm,
+  .show-on-lg {
+    display: block;
+  }
+
+  #openMenuIcon {
+    display: none;
+  }
+
+  header {
+    height: auto;
+  }
+
+  nav {
+    height: 9vh !important;
+    padding: 0 11.2%;
+  }
+
+  nav > ul {
+    margin-right: -30%;
+  }
+
+  nav > ul > li {
+    padding: 0 30px;
+  }
+
+  nav > ul > li > a:hover {
+    color: #ec5242;
+  }
+
+  .header-top {
+    justify-content: flex-end;
+    height: 30px !important;
+    padding: 10px;
+  }
+
+  .header-top > ul {
+    margin: 5px 10%;
+  }
+
+  .header-top > ul > li {
+    margin: 0 20px;
+  }
+
+  .site-logo {
+    width: 100% !important;
+    height: 50px !important;
+  }
+
+  .campaign {
+    border: 3px solid #ec5242;
+    padding: 10px;
+  }
+
+  .headline-section {
+    background-image: url('./public/images/svgs/desktop-landing.svg');
+    width: 100%;
+  }
+
+  .headline-content-container {
+    margin-top: 0%;
+    padding: 0 30px;
+  }
+
 }
