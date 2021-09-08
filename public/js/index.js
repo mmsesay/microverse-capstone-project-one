@@ -14,6 +14,63 @@ window.onload = () => {
   let objectsToShow = 2;
   let startIndex = 0;
 
+  const artistsArray = [
+    {
+      artistName: 'Boss Maej',
+      artistLabel: 'Home of creativity',
+      artistSummary: 'The artist\'s real name is Muhammad Sesay from Sierra Leone.',
+      artistImage: {
+        url: './public/images/artists/maej.jpg',
+        alt: 'boss maej\'s photo',
+      },
+    },
+    {
+      artistName: 'DReal',
+      artistLabel: 'Home of creativity',
+      artistSummary: 'The artist\'s real name is Houdi Kawulay from Sierra Leone.',
+      artistImage: {
+        url: './public/images/artists/dreal.jpg',
+        alt: 'DReal\'s photo',
+      },
+    },
+    {
+      artistName: 'Burna Boy',
+      artistLabel: 'Home of creativity',
+      artistSummary: 'The artist\'s real name is Damini Ebunoluwa Ogulu from Sierra Leone',
+      artistImage: {
+        url: './public/images/artists/burna-boy.jpeg',
+        alt: 'Burna boy photo',
+      },
+    },
+    {
+      artistName: 'Oxlade',
+      artistLabel: 'Knostra Music',
+      artistSummary: 'The artist\'s real name is Ikuforiji Olaitan Abdulrahman from Nigeria.',
+      artistImage: {
+        url: './public/images/artists/oxlade.jpg',
+        alt: 'Oxlade\'s photo',
+      },
+    },
+    {
+      artistName: 'Stormzy',
+      artistLabel: 'Merky - Warner',
+      artistSummary: 'The artist\'s real name is Michael Ebenezer Kwadjo Omari Jr. from UK',
+      artistImage: {
+        url: './public/images/artists/stormzy.jpg',
+        alt: 'Stormzy\'s photo',
+      },
+    },
+    {
+      artistName: 'Dave Santan',
+      artistLabel: 'Warner Chappell Music',
+      artistSummary: 'The artist\'s real name is David Orobosa Omoregie',
+      artistImage: {
+        url: './public/images/artists/dave.jpg',
+        alt: 'Dave\'s photo',
+      },
+    },
+  ];
+
   const hideElement = (args) => {
     args.forEach((element) => {
       element.style.display = 'none';
@@ -31,63 +88,6 @@ window.onload = () => {
   };
 
   const showArtists = () => {
-    const artistsArray = [
-      {
-        artistName: 'Boss Maej',
-        artistLabel: 'Home of creativity',
-        artistSummary: 'The artist\'s real name is Muhammad Sesay from Sierra Leone.',
-        artistImage: {
-          url: './public/images/artists/maej.jpg',
-          alt: 'boss maej\'s photo',
-        },
-      },
-      {
-        artistName: 'DReal',
-        artistLabel: 'Home of creativity',
-        artistSummary: 'The artist\'s real name is Houdi Kawulay from Sierra Leone.',
-        artistImage: {
-          url: './public/images/artists/dreal.jpg',
-          alt: 'DReal\'s photo',
-        },
-      },
-      {
-        artistName: 'Burna Boy',
-        artistLabel: 'Home of creativity',
-        artistSummary: 'The artist\'s real name is Damini Ebunoluwa Ogulu from Sierra Leone',
-        artistImage: {
-          url: './public/images/artists/burna-boy.jpeg',
-          alt: 'Burna boy photo',
-        },
-      },
-      {
-        artistName: 'Oxlade',
-        artistLabel: 'Knostra Music',
-        artistSummary: 'The artist\'s real name is Ikuforiji Olaitan Abdulrahman from Nigeria.',
-        artistImage: {
-          url: './public/images/artists/oxlade.jpg',
-          alt: 'Oxlade\'s photo',
-        },
-      },
-      {
-        artistName: 'Stormzy',
-        artistLabel: 'Merky - Warner',
-        artistSummary: 'The artist\'s real name is Michael Ebenezer Kwadjo Omari Jr. from UK',
-        artistImage: {
-          url: './public/images/artists/stormzy.jpg',
-          alt: 'Stormzy\'s photo',
-        },
-      },
-      {
-        artistName: 'Dave Santan',
-        artistLabel: 'Warner Chappell Music',
-        artistSummary: 'The artist\'s real name is David Orobosa Omoregie',
-        artistImage: {
-          url: './public/images/artists/dave.jpg',
-          alt: 'Dave\'s photo',
-        },
-      },
-    ];
-
     for (let i = startIndex; i < artistsArray.length; i += 1) {
       if (i < objectsToShow) {
         artistCard += `
@@ -123,7 +123,7 @@ window.onload = () => {
       objectsToShow += 2; // increment the objects to show per click
       startIndex += 2; // increment the starting point
       showArtists(); // show the artists
-    
+
       if (objectsToShow >= artistsArray.length) {
         hideElement([seeMoreButton]);
       } else {
