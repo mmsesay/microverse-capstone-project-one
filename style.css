@@ -154,6 +154,15 @@ body {
   text-decoration: none;
 }
 
+.bg-full {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  top: 0%;
+}
+
 /* HEADER SECTION */
 header {
   width: 100%;
@@ -173,14 +182,10 @@ header {
 /* Headline section */
 .headline-section {
   background-image: url('./public/images/svgs/mobile-landing.svg');
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  top: 0%;
 }
 
 .headline-content-container {
-  margin-top: 60%;
+  margin-top: 75%;
   padding: 0 30px;
 }
 
@@ -324,10 +329,6 @@ header {
 /* ABOUT SECTION */
 .about-headline-section {
   background-image: url('./public/images/svgs/mobile-about.svg');
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  top: 0%;
 }
 
 .about-headline-content-container {
