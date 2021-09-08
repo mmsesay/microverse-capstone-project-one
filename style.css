@@ -479,6 +479,11 @@ footer .copyright-text {
   .site-logo {
     width: 100% !important;
     height: 50px !important;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .site-logo:hover {
+    transform: rotate(360deg);
   }
 
   .campaign {
@@ -601,6 +606,12 @@ footer .copyright-text {
 
   .partners-image {
     width: 130px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .partners-image:hover {
+    transform: scale(1.2);
   }
 
   /* ABOUT SECTION */
@@ -642,6 +653,12 @@ footer .copyright-text {
 
   .about-site-logo {
     margin: 2% 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .about-site-logo:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
   }
 
   .past-event-images-container {
@@ -654,6 +671,14 @@ footer .copyright-text {
   .past-event-image-2 {
     width: 30%;
     margin-top: 2%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .past-event-image-1:hover,
+  .past-event-image-2:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 40px rgba(128, 128, 128, 0.37);
+    cursor: pointer;
   }
 
   .past-event-content > h4 {
