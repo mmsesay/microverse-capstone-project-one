@@ -404,7 +404,6 @@ header {
 }
 
 /* FOOTER SECTION */
-
 footer {
   height: 15vh;
 }
@@ -539,7 +538,7 @@ footer .copyright-text {
 
   .card:hover {
     border: 2px solid #fff;
-    margin-top: -2%;
+    margin-top: -3%;
   }
 
   .card-title {
@@ -579,5 +578,38 @@ footer .copyright-text {
 
   .artist-content-container .artist-summary {
     font-size: 13px;
+  }
+
+  /* Partners Section */
+  .partners-section {
+    height: 22vh;
+    padding: 10px 0;
+    margin: 30px 0;
+  }
+
+  .partner-image-container > ul {
+    margin-top: 40px;
+  }
+
+  .partner-image-container > ul > li {
+    margin: 0 20px;
+  }
+
+  .partners-image {
+    width: 130px;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    height: 15vh;
+  }
+
+  footer .footer-site-logo {
+    width: 6%;
+  }
+
+  footer .copyright-text {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
