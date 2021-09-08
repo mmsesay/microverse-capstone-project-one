@@ -14,12 +14,19 @@ About second view                                 |  About footer view
 :------------------------------------------------:|:-----------------------------------------------:
 ![](./public/images/screenshots/m5.png)           |  ![](./public/images/screenshots/m6.png)
 
+Desktop Landing                                  
+:--------------------------------------------------------------------------------------------------:
+![](./public/images/screenshots/d1.png)   
+
 ## Built With
 
 - HTML & CSS & JAVASCRIPT
 
 ## Link to project online
 - [OnlineVersion](https://mmsesay.github.io/microverse-capstone-project-one/)
+
+## Link to project recorded video
+- [OnlineVersion](https://www.loom.com/share/ea911f26628a4ed1919244f1a0dedd7f)
 
 ## Authors
 
