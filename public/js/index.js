@@ -20,7 +20,7 @@ window.onload = () => {
       artistLabel: 'Home of creativity',
       artistSummary: 'The artist\'s real name is Muhammad Sesay from Sierra Leone.',
       artistImage: {
-        url: './public/images/artists/maej.jpg',
+        url: './public/images/svgs/artists/maej.svg',
         alt: 'boss maej\'s photo',
       },
     },
@@ -29,7 +29,7 @@ window.onload = () => {
       artistLabel: 'Home of creativity',
       artistSummary: 'The artist\'s real name is Houdi Kawulay from Sierra Leone.',
       artistImage: {
-        url: './public/images/artists/dreal.jpg',
+        url: './public/images/svgs/artists/dreal.svg',
         alt: 'DReal\'s photo',
       },
     },
@@ -38,7 +38,7 @@ window.onload = () => {
       artistLabel: 'Home of creativity',
       artistSummary: 'The artist\'s real name is Damini Ebunoluwa Ogulu from Sierra Leone',
       artistImage: {
-        url: './public/images/artists/burna-boy.jpeg',
+        url: './public/images/svgs/artists/burna.svg',
         alt: 'Burna boy photo',
       },
     },
@@ -47,7 +47,7 @@ window.onload = () => {
       artistLabel: 'Knostra Music',
       artistSummary: 'The artist\'s real name is Ikuforiji Olaitan Abdulrahman from Nigeria.',
       artistImage: {
-        url: './public/images/artists/oxlade.jpg',
+        url: './public/images/svgs/artists/oxlade.svg',
         alt: 'Oxlade\'s photo',
       },
     },
@@ -56,7 +56,7 @@ window.onload = () => {
       artistLabel: 'Merky - Warner',
       artistSummary: 'The artist\'s real name is Michael Ebenezer Kwadjo Omari Jr. from UK',
       artistImage: {
-        url: './public/images/artists/stormzy.jpg',
+        url: './public/images/svgs/artists/stormzy.svg',
         alt: 'Stormzy\'s photo',
       },
     },
@@ -65,7 +65,7 @@ window.onload = () => {
       artistLabel: 'Warner Chappell Music',
       artistSummary: 'The artist\'s real name is David Orobosa Omoregie',
       artistImage: {
-        url: './public/images/artists/dave.jpg',
+        url: './public/images/svgs/artists/dave.svg',
         alt: 'Dave\'s photo',
       },
     },
@@ -89,11 +89,10 @@ window.onload = () => {
 
   const showArtists = () => {
     for (let i = startIndex; i < artistsArray.length; i += 1) {
-      if (i < objectsToShow) {
+      // if (i < objectsToShow) {
         artistCard += `
           <div class="artist-card flex items-center m-10">
             <div class="artist-image-container">
-              <img class="chess-image" src="./public/images/chess-bg.png" alt="chess background image"/>
               <img class="artist-image" src="${artistsArray[i].artistImage.url}" alt="${artistsArray[i].artistImage.alt}" />
             </div>
             <div class="artist-content-container">
@@ -108,7 +107,7 @@ window.onload = () => {
             </div>
           </div>
         `;
-      }
+      // }
     }
 
     if (GuestArtistContainer !== null) {
