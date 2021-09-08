@@ -190,8 +190,9 @@ header {
 }
 
 .headline-content-container {
-  margin-top: 60%;
+  margin: 30% 0 0 0;
   padding: 0 30px;
+  position: absolute;
 }
 
 .venue-text {
@@ -492,8 +493,24 @@ footer .copyright-text {
   }
 
   .headline-content-container {
-    margin-top: 0%;
+    margin-top: 25% !important;
+    margin-left: 5%;
     padding: 0 30px;
+    position: absolute;
   }
 
+  .intro-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .dateTime-text {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  .venue-text {
+    margin-left: 0;
+    font-size: 18px;
+  }
 }
