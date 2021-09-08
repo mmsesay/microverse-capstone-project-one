@@ -26,41 +26,58 @@
   </head>
   <body>
     <main>
-      <header class="hide-on-sm show-on-lg text-white font-lato">
-        <div class="header-top bg-gray-color flex">
-          <ul class="list-none flex">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li>English</li>
-            <li>My Page</li>
-            <li>Logout</li>
-          </ul>
+      <header class="text-white font-lato">
+        <div class="hide-on-sm show-on-lg ">
+          <div class="header-top bg-gray-color flex items-center">
+            <nav class="subHeaderStyle">
+              <ul class="list-none flex">
+                <li class="subHeaderListStyle"><i class="fab fa-facebook-f"></i></li>
+                <li class="subHeaderListStyle"><i class="fab fa-twitter"></i></li>
+                <li class="subHeaderListStyle">English</li>
+                <li class="subHeaderListStyle">My Page</li>
+                <li class="subHeaderListStyle">Logout</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-bottom">
+            <nav class="flex items-center space-between subHeaderStyle">
+              <a class="cursor-pointer" href="index.html"><img class="site-logo" src="./public/images/svgs/site-logo.svg" alt="site logo on header "/></a>
+              <ul class="list-none flex items-center">
+                <li class="subHeaderListStyle"><a href="about.html" class="no-underline gray-text-color">About</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Program</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Join</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Sponsor</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">News</a></li>
+                <li class="subHeaderListStyle campaign"><a href="#" class="no-underline secondary-text-color">Music Campaign</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav class="header-nav flex items-center space-between">
-          <a class="cursor-pointer" href="index.html"><img class="site-logo" src="./public/images/svgs/site-logo.svg" alt="site logo on header "/></a>
-          <ul class="list-none flex">
-            <li><a href="about.html" class="no-underline gray-text-color">About</a></li>
-            <li><a href="#" class="no-underline gray-text-color">Program</a></li>
-            <li><a href="#" class="no-underline gray-text-color">Join</a></li>
-            <li><a href="#" class="no-underline gray-text-color">Sponsor</a></li>
-            <li><a href="#" class="no-underline gray-text-color">News</a></li>
-          </ul>
-          <span class="campaign secondary-text-color">
-            Music Campaign
-          </span>
-        </nav>
+        <i class="fas fa-bars cursor-pointer" id="openMenuIcon"></i>
       </header>
 
       <!-- Headline section -->
-      <section class="headline-section bg-full">
-        <i class="fas fa-bars cursor-pointer" id="openMenuIcon"></i>
-        <div class="headline-content-container font-cocogoose alternative-text-color text-justify">
-          <p class="intro-text font-md">A joyful celebration believing in the value of openness and sharing.
-            <br />
-            Creating a positive change with entertainment.
-          </p>
-          <p class="dateTime-text font-lato font-bold secondary-text-color">2021.09.25 (SAT) ~ 26 (SUN)</p>
-          <p class="venue-text">&#64; Siakia Steven Stadium<br />Freetown - Sierra Leone.</p>
+      <section class="headline-section flex flex-col justify-center items-center">
+
+        <!-- mobile shapes -->
+        <img id="bottom-left-shape-mb" class="hide-on-lg" src="./public/images/svgs/bottom-left-shape-mb.svg" alt="bottom left shape">
+        <img id="title-shape" class="hide-on-lg" src="./public/images/svgs/title-shape.svg" alt="title shape">
+
+        <!-- desktop shape -->
+        <img id="top-left-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/top-left-shape.svg" alt="top left shape">
+        <img id="circle-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/circle-shape.svg" alt="tcircle shape">
+        <img id="bottom-right-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/right-shape.svg" alt="bottom right shape">
+        <img id="bottom-left-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/bottom-left-shape.svg" alt="bottom-left shape">
+
+        <div class="headline-content-container flex items-center justify-center">
+          <div class="headline-sub-container font-cocogoose alternative-text-color">
+            <p class="intro-text font-md">A joyful celebration believing in the value of openness and sharing.
+              <br />
+              Creating a positive change with entertainment.
+            </p>
+            <p class="dateTime-text font-lato font-bold secondary-text-color">2021.09.25 (SAT) ~ 26 (SUN)</p>
+            <p class="venue-text">&#64; Siakia Steven Stadium<br />Freetown - Sierra Leone.</p>
+          </div>
         </div>
       </section>
 

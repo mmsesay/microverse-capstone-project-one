@@ -26,54 +26,57 @@
   </head>
   <body>
     <main>
-      <header class="hide-on-sm show-on-lg text-white font-lato">
-        <div class="header-top bg-gray-color flex">
-          <ul class="list-none flex">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li>English</li>
-            <li>My Page</li>
-            <li>Logout</li>
-          </ul>
+      <header class="text-white font-lato">
+        <div class="hide-on-sm show-on-lg ">
+          <div class="header-top bg-gray-color flex items-center">
+            <nav class="subHeaderStyle">
+              <ul class="list-none flex">
+                <li class="subHeaderListStyle"><i class="fab fa-facebook-f"></i></li>
+                <li class="subHeaderListStyle"><i class="fab fa-twitter"></i></li>
+                <li class="subHeaderListStyle">English</li>
+                <li class="subHeaderListStyle">My Page</li>
+                <li class="subHeaderListStyle">Logout</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-bottom">
+            <nav class="flex items-center space-between subHeaderStyle">
+              <a class="cursor-pointer" href="index.html"><img class="site-logo" src="./public/images/svgs/site-logo.svg" alt="site logo on header "/></a>
+              <ul class="list-none flex items-center">
+                <li class="subHeaderListStyle"><a href="about.html" class="no-underline secondary-text-color">About</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Program</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Join</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Sponsor</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">News</a></li>
+                <li class="subHeaderListStyle campaign"><a href="#" class="no-underline secondary-text-color">Music Campaign</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav class="header-nav flex items-center space-between">
-          <a class="cursor-pointer" href="index.html"><img class="site-logo" src="./public/images/svgs/site-logo.svg" alt="site logo on header "/></a>
-          <ul class="list-none flex">
-            <li><a href="about.html" class="no-underline secondary-text-color">About</a></li>
-            <li><a href="#" class="no-underline gray-text-color">Program</a></li>
-            <li><a href="#" class="no-underline gray-text-color">Join</a></li>
-            <li><a href="#" class="no-underline gray-text-color">Sponsor</a></li>
-            <li><a href="#" class="no-underline gray-text-color">News</a></li>
-          </ul>
-          <span class="campaign secondary-text-color">
-            Music Campaign
-          </span>
-        </nav>
+        <i class="fas fa-bars cursor-pointer" id="openMenuIcon"></i>
       </header>
 
       <!-- About section -->
-      <section class="about-headline-section bg-full">
-        <i class="fas fa-bars cursor-pointer" id="openMenuIcon"></i>
-        <div class="about-headline-content-container font-lato flex flex-col text-center text-gray">
-          <div class="about-top hide-on-sm show-on-lg">
-            <h1 class="about-card-title secondary-text-color">MUSIC FESTIVAL</h1>
-            <p class="text-white font-lg font-bold">Free Drinks</p>
-            <p class="text-white font-lg font-bold">Ticket $8</p>
-            <p class="text-white font-lg font-bold">Doors open 8pm</p>
+      <section class="about-headline-section flex items-center justify-center">
+        <img id="about-title-shape" src="./public/images/svgs/about-title-shape.svg" alt="about image">
+        <img id="walkman-shape" src="./public/images/svgs/walkman-shape.svg" alt="walkman-shape">
+        <img id="computer-shape" src="./public/images/svgs/computer-shape.svg" alt="computer-shape">
+        <div class="flex justify-center">
+          <div class="about-headline-content-container font-lato flex flex-col text-center text-gray">
+            <div class="about-headline-content-card bg-white">
+              <p class="font-md description">
+                The Music Festival brings together people from different parts of the world to the sound of unity, oneness, love and a wonderful atmosphere for joy.
+                Sierra Leone ie. "the lion mountain" will be the host country for this year&apos;s festival.
+              </p>
+            </div>
+            <div class="about-bottom">
+              <p class="text-center text-white">
+                Please contact us for more enquires about the music festival!
+                <br />
+                <a href="#" class="alternative-text-color">contact@musicfest.com</a>
+              </p>
+            </div>          
           </div>
-          <div class="about-headline-content-card bg-white">
-            <p class="font-md description">
-              The Music Festival brings together people from different parts of the world to the sound of unity, oneness, love and a wonderful atmosphere for joy.
-              Sierra Leone ie. "the lion mountain" will be the host country for this year&apos;s festival.
-            </p>
-          </div>
-          <div class="about-bottom">
-            <p class="text-center text-white">
-              Please contact us for more enquires about the music festival!
-              <br />
-              <a href="#" class="alternative-text-color">contact@musicfest.com</a>
-            </p>
-          </div>          
         </div>
       </section>
 

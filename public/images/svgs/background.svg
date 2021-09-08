@@ -6043,7 +6043,7 @@
    </g>
   </g>
  </g>
- <g>
+ <g display="none">
   <g transform="translate(-7.7902 20.489)">
    <g transform="matrix(.11702 0 0 .11702 -132.69 81.184)" clip-path="url(#clip130-8-0)">
     <path d="m636.93 411.6 144.94-105.52h-21.613l127.78-95.031-15.895-5.2852 70.516-62.547v268.39h-305.72" fill="#fde11c"/>
@@ -6201,7 +6201,7 @@
    </g>
   </g>
  </g>
- <g>
+ <g display="none">
   <g transform="matrix(.035278 0 0 -.035278 131.57 422.09)">
    <g clip-path="url(#clipPath323444)">
     <g transform="matrix(6961.2,0,0,99.2,269.9,-3.1)">
