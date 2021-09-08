@@ -433,6 +433,10 @@ footer .copyright-text {
     font-size: 26px;
   }
 
+  .font-lg-md {
+    font-size: 20px;
+  }
+
   #openMenuIcon {
     display: none;
   }
@@ -580,7 +584,7 @@ footer .copyright-text {
     font-size: 13px;
   }
 
-  /* Partners Section */
+  /* PARTNERS SECTION */
   .partners-section {
     height: 22vh;
     padding: 10px 0;
@@ -597,6 +601,67 @@ footer .copyright-text {
 
   .partners-image {
     width: 130px;
+  }
+
+  /* ABOUT SECTION */
+  .about-headline-content-container {
+    margin-top: 25% !important;
+    margin-left: 5%;
+    padding: 0 30px;
+    position: absolute;
+    align-items: center;
+  }
+
+  .about-top {
+    margin-top: -20%;
+  }
+
+  .about-card-title {
+    font-family: 'cocogoose', sans-serif;
+    font-size: 52px;
+  }
+
+  .about-headline-content-card {
+    width: 50%;
+    margin-top: 3%;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-bottom {
+    margin-top: 2%;
+  }
+
+  .about-bottom > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-site-logo {
+    margin: 2% 0;
+  }
+
+  .past-event-images-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .past-event-image-1,
+  .past-event-image-2 {
+    width: 30%;
+    margin-top: 2%;
+  }
+
+  .past-event-content > h4 {
+    font-size: 32px;
+  }
+
+  .past-event-content > p {
+    font-size: 22px;
   }
 
   /* FOOTER SECTION */

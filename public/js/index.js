@@ -153,7 +153,11 @@ window.onload = () => {
   if (closeMenuButton !== null) {
     closeMenuButton.addEventListener('click', () => {
       hideElement([modalSection, closeMenuButton]);
-      headlineSection.style.filter = 'blur(0px)';
+      if (headlineSection !== null) {
+        headlineSection.style.filter = 'blur(0px)';
+      } else if (aboutHeadlineSection !== null) {
+        aboutHeadlineSection.style.filter = 'blur(0px)';
+      }
       body.style.overflow = 'scroll';
     });
   }
