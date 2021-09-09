@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFNS01QLGM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QFNS01QLGM');
+    </script>
+    <!-- Other import -->
+    <title>Music Festival</title>
+  </head>
+  <body>
+    <main>
+      <header class="text-white font-lato">
+        <div class="hide-on-sm show-on-lg ">
+          <div class="header-top bg-gray-color flex items-center">
+            <nav class="subHeaderStyle">
+              <ul class="list-none flex">
+                <li class="subHeaderListStyle"><i class="fab fa-facebook-f"></i></li>
+                <li class="subHeaderListStyle"><i class="fab fa-twitter"></i></li>
+                <li class="subHeaderListStyle">English</li>
+                <li class="subHeaderListStyle">My Page</li>
+                <li class="subHeaderListStyle">Logout</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-bottom">
+            <nav class="flex items-center space-between subHeaderStyle">
+              <a class="cursor-pointer" href="index.html"><img class="site-logo" src="./public/images/svgs/site-logo.svg" alt="site logo on header "/></a>
+              <ul class="list-none flex items-center">
+                <li class="subHeaderListStyle"><a href="about.html" class="no-underline gray-text-color">About</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Program</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Join</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">Sponsor</a></li>
+                <li class="subHeaderListStyle"><a href="#" class="no-underline gray-text-color">News</a></li>
+                <li class="subHeaderListStyle campaign"><a href="#" class="no-underline secondary-text-color">Music Campaign</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <i class="fas fa-bars cursor-pointer" id="openMenuIcon"></i>
+      </header>
+
+      <!-- Headline section -->
+      <section class="headline-section flex flex-col justify-center items-center">
+
+        <!-- mobile shapes -->
+        <img id="bottom-left-shape-mb" class="hide-on-lg" src="./public/images/svgs/bottom-left-shape-mb.svg" alt="bottom left shape">
+        <img id="title-shape" class="hide-on-lg" src="./public/images/svgs/title-shape.svg" alt="title shape">
+
+        <!-- desktop shape -->
+        <img id="top-left-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/top-left-shape.svg" alt="top left shape">
+        <img id="circle-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/circle-shape.svg" alt="tcircle shape">
+        <img id="bottom-right-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/right-shape.svg" alt="bottom right shape">
+        <img id="bottom-left-shape" class="hide-on-sm show-on-lg" src="./public/images/svgs/bottom-left-shape.svg" alt="bottom-left shape">
+
+        <div class="headline-content-container flex items-center justify-center">
+          <div class="headline-sub-container font-cocogoose alternative-text-color">
+            <p class="intro-text font-md">A joyful celebration believing in the value of openness and sharing.
+              <br />
+              Creating a positive change with entertainment.
+            </p>
+            <p class="dateTime-text font-lato font-bold secondary-text-color">2021.09.25 (SAT) ~ 26 (SUN)</p>
+            <p class="venue-text">&#64; Siakia Steven Stadium<br />Freetown - Sierra Leone.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- mobile-menu -->
+      <section class="modal-section primary-bg-color">
+        <i class="fas fa-times cursor-pointer " id="closeMenuIcon"></i>
+        <div class="mobile-menu font-lato">
+          <ul class="list-none">
+            <li><a href="index.html" class="font-lg no-underline font-bold secondary-text-color">Home</a></li>
+            <li><div class="secondary-bg-color line line-md"></div></li>
+            <li><a href="about.html" class="font-lg no-underline font-bold text-white">About</a></li>
+            <li><div class="secondary-bg-color line line-md"></div></li>
+            <li><a href="#" class="font-lg no-underline font-bold text-white">Program</a></li>
+            <li><div class="secondary-bg-color line line-md"></div></li>
+            <li><a href="#" class="font-lg no-underline font-bold text-white">Join</a></li>
+            <li><div class="secondary-bg-color line line-md"></div></li>
+            <li><a href="#" class="font-lg no-underline font-bold text-white">Sponsor</a></li>
+            <li><div class="secondary-bg-color line line-md"></div></li>
+            <li><a href="#" class="font-lg no-underline font-bold text-white">News</a></li>
+            <li><div class="secondary-bg-color line line-md"></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Main program sesction -->
+      <section class="main-program-section primary-bg-color flex flex-col items-center">
+        <h3 class="text-center text-white font-lato md-font-lg">Main Program</h3>
+        <div class="secondary-bg-color line"></div>
+        
+        <!-- cards section -->
+        <div class="cards-container font-lato">
+          <div class="card flex items-center">
+            <div class="card-icon items-center">
+              <i class="fas fa-drum fa-2x text-white"></i>
+            </div>
+            <h4 class="card-title secondary-text-color text-left">
+              Afro Beats
+            </h4>
+            <p class="card-summary alternative-text-color">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa.
+            </p>
+          </div>
+          <div class="card flex items-center">
+            <div class="card-icon">
+              <i class="fas fa-compact-disc fa-2x text-white"></i>
+            </div>
+            <h4 class="card-title secondary-text-color text-left">
+              Pop Jam
+            </h4>
+            <p class="card-summary alternative-text-color">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa.
+            </p>
+          </div>
+          <div class="card flex items-center">
+            <div class="card-icon">
+              <i class="fas fa-headphones fa-2x text-white"></i>
+            </div>
+            <h4 class="card-title secondary-text-color text-left">
+              Hip Hop
+            </h4>
+            <p class="card-summary alternative-text-color">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa.
+            </p>
+          </div>
+          <div class="card flex items-center">
+            <div class="card-icon">
+              <i class="fas fa-sliders-h fa-2x text-white"></i>
+            </div>
+            <h4 class="card-title secondary-text-color text-left">
+              Classical Mix
+            </h4>
+            <p class="card-summary alternative-text-color">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa.
+            </p>
+          </div>
+          <div class="card flex items-center">
+            <div class="card-icon">
+              <i class="fas fa-guitar fa-2x text-white"></i>
+            </div>
+            <h4 class="card-title secondary-text-color text-left">
+              Lovers Rock
+            </h4>
+            <p class="card-summary alternative-text-color">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa.
+            </p>
+          </div>
+        </div>
+
+        <a href="#" class="text-white font-lato seeWholeProgramLink hide-on-sm show-on-lg">SEE THE WHOLE PROGRAM</a>
+        <!-- button -->
+        <button class="secondary-bg-color button-lg text-white font-bold hide-on-lg">Purchase a ticket</button>
+      </section>
+
+      <!-- Guest Artist section -->
+      <section class="guest-artists-section flex flex-col items-center">
+        <h3 class="text-center primary-text-color font-lato md-font-lg">Guest Artists</h3>
+        <div class="secondary-bg-color line"></div>
+
+        <div class="guest-artists-cards-container font-lato"></div>
+        <div class="see-more-button guest-button flex items-center justify-center font-lato cursor-pointer hide-on-sm hide-on-lg">
+          <p class="text-gray">More</p>
+          <i class="fas fa-chevron-down secondary-text-color chevron"></i>
+        </div>
+        <div class="collapse-button guest-button flex items-center justify-center font-lato cursor-pointer hide-on-sm hide-on-lg">
+          <p class="text-gray">Hide</p>
+          <i class="fas fa-chevron-up secondary-text-color chevron"></i>
+        </div>
+      </section>
+
+      <!-- Partners section -->
+      <section class="partners-section primary-bg-color hide-on-sm show-on-lg">
+        <div class="partners-section-text-content flex flex-col items-center">
+          <h3 class="text-center text-gray font-lato md-font-lg">Partners</h3>
+          <div class="secondary-bg-color line line-xs"></div>
+        </div>
+        <div class="flex items-center justify-center partner-image-container">
+          <ul class="list-none flex flex-wrap items-center justify-center">
+            <li><img class="partners-image partners-img-mozilla" src="./public/images/partners/mozilla.png" alt="mozilla icon"></li>
+            <li><img class="partners-image partners-img-google" src="./public/images/partners/google.png" alt="google icon"></li>
+            <li><img class="partners-image partners-img-naver" src="./public/images/partners/naver.png" alt="naver icon"></li>
+            <li><img class="partners-image partners-img-daumkakao" src="./public/images/partners/daumkakao.png" alt="daumkakao icon"></li>
+            <li><img class="partners-image partners-img-airbnb" src="./public/images/partners/airbnb.png" alt="airbnb icon"></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="text-white flex items-center justify-center bg-white">
+        <img class="footer-site-logo" src="./public/images/svgs/site-logo.svg" alt="site logo">
+        <p class="text-gray font-lato copyright-text">2021 Music Festival <br> Some Rights Reserved.</p>
+      </footer>
+    </main>
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>
