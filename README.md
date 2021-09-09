@@ -30,7 +30,7 @@ Desktop Landing
 
 ## Authors
 
-👤 **Author1**
+👤 **Author: Muhammad Mustapha Sesay**
 
 - GitHub: [@mmsesay](https://github.com/mmsesay)
 - Twitter: [@DeeMaejor](https://twitter.com/DeeMaejor)
