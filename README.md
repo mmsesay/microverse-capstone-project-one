@@ -1,6 +1,6 @@
 # microverse-capstone-project-one
 
-> This project is my capstone project on HTML + CSS + JAVASCRIPT. My chosen topic is Music Festival.
+> This is my capstone project on HTML + CSS + JAVASCRIPT. It's centred towards a music festival concert and showcases the different types of music and artists that will be performing. It also makes use of dynamic artist content that is coming from javascript and render into the DOM.
 
 Homepage view                                     |  Main program view                             |
 :------------------------------------------------:|:-----------------------------------------------:
